@@ -12,13 +12,13 @@ def sms():
     ## @brief This sample code demonstrate how to send sms through CoolSMS Rest API PHP
     if __name__ == "__main__":
         # set api key, api secret
-        api_key = "NCSUQC7X8QD6JT1M"
-        api_secret = "G9BYFAOQ7CXYJ5KC6ZCY2QY0SGGITPTR"
+        api_key = ""
+        api_secret = ""
         ## 4 params(to, from, type, text) are mandatory. must be filled
         params = dict()
         params['type'] = 'sms' # Message type ( sms, lms, mms, ata )
-        params['to'] = '01086031048' # Recipients Number '01000000000,01000000001'
-        params['from'] = '01086031048' # Sender number
+        params['to'] = '' # Recipients Number '01000000000,01000000001'
+        params['from'] = '' # Sender number
         params['text'] = '1번 작업자가 안전모를 미착용했습니다.' # Message
         cool = Message(api_key, api_secret)
         try:
